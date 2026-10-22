@@ -69,21 +69,21 @@ The browser opens the combined app. Submit one example on the **Titanic Survival
 
 ## 6. Deploy to Streamlit Community Cloud
 
-The friend's ZIP uses Streamlit, and this project keeps that route. The assignment asks for cloud deployment and itself points to a live Streamlit demo, so the combined app covers both model tasks with one public URL.
+The friend's ZIP uses Streamlit, and this project keeps that route. The assignment asks for cloud deployment and itself points to a live Streamlit demo, so the combined app covers both model tasks with one public URL. The verified deployment is [https://sp24-bse-091-machine.streamlit.app/](https://sp24-bse-091-machine.streamlit.app/); both tabs returned model outputs during the check.
 
 1. Create a GitHub repository in your own account.
 2. Push the contents of the project folder to the repository root. Include `app.py`, `model_utils.py`, `requirements.txt`, `data/`, and both `.pkl` files.
 3. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) with GitHub.
 4. Choose **Create app**, select your repository and branch, and set the app file to `app.py`.
 5. Open **Advanced settings**, select Python 3.12, then deploy.
-6. Wait for the build to finish. Open the public URL and confirm both tabs make predictions. If the build fails, open the app logs and verify that the repository contains the dependency file, data folder, model files, and source code.
-7. Copy the verified URL, such as `https://your-app-name.streamlit.app/`.
+6. The current deployment is already live and verified. If you redeploy, wait for the build to finish and confirm both tabs again. If the build fails, open the app logs and verify that the repository contains the dependency file, data folder, model files, and source code.
+7. If redeployment creates a different URL, use that verified URL in both notebooks.
 
 Streamlit deploys from a GitHub repository and reads Python dependencies from `requirements.txt`. See its [deployment instructions](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy) and [dependency instructions](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/app-dependencies).
 
 ## 7. Finish the notebooks and upload
 
-1. In the first markdown cell of **both** notebooks, replace the pending deployment-link text with your working public URL. The link must be the first line.
+1. The verified deployment URL is already at the top of the first markdown cell in **both** notebooks. If you redeploy under a different URL, update both links. The deployment URL must remain the first line.
 2. Save both notebooks with their executed outputs.
 3. Include these items in the final submission:
 

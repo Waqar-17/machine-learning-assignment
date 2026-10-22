@@ -34,7 +34,9 @@ python -m streamlit run app.py
 
 ## Deploy
 
-The app is ready for Streamlit Community Cloud. Push the contents of this folder to a GitHub repository you control. In Streamlit Community Cloud, create an app from that repository and set `app.py` as the entrypoint. Keep `requirements.txt`, `data/`, both `.pkl` files, and the Python source files in the repository. Select Python 3.12 in Advanced settings. Once the app builds, test both tabs and replace the pending deployment link at the very top of both notebooks with the verified public URL.
+Live deployment: [https://sp24-bse-091-machine.streamlit.app/](https://sp24-bse-091-machine.streamlit.app/). I verified that both prediction tabs return model outputs and that the app source points to this repository's `app.py`.
+
+To redeploy, select this repository and set `app.py` as the entrypoint. Keep `requirements.txt`, `data/`, both `.pkl` files, and the Python source files in the repository. Select Python 3.12 in Advanced settings. If you deploy under a new URL, replace the deployment link at the top of both notebooks.
 
 See `STEP_BY_STEP_GUIDE.md` for the full workflow and Google Classroom checklist.
 
@@ -42,4 +44,4 @@ See `STEP_BY_STEP_GUIDE.md` for the full workflow and Google Classroom checklist
 
 The heart target maps UCI `num=0` to **No disease** and `num=1,2,3,4` to **Disease present**. Evaluation metrics explicitly count Disease present as the positive class. The Titanic teaching sample has 100 rows with 55 repeated rows; the notebook removes exact duplicates before its small holdout split. Both are classroom examples. The heart model is not for diagnosis or medical decisions.
 
-The assignment statement includes a plagiarism policy. Run the notebooks, review their explanations, add any student details your instructor requires, and submit work you can explain. No live deployment URL is included until you publish and verify your own app.
+The assignment statement includes a plagiarism policy. Run the notebooks, review their explanations, add any student details your instructor requires, and submit work you can explain.
